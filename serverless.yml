@@ -92,17 +92,17 @@ functions:
 
 
 resources:
-  Resourses:
+  Resources:
     PostsTable:
       Type: AWS::DynamoDB::Table
       Properties:
-        TableName : ${self:custom.postsTableName}
-        AttributeDefinitions : 
-          - AttributeName : postId
-            AttributeType : S
-        KeySchema :
-          - AttributeName : postId
-            KeyType : HASH
+        TableName: ${self:custom.postsTableName}
+        AttributeDefinitions:
+          - AttributeName: postId
+            AttributeType: S
+        KeySchema:
+          - AttributeName: postId
+            KeyType: HASH
         ProvisionedThroughput:
-          ReadCapacityUnits : 1
-          WriteCapacityUnits : 1
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
